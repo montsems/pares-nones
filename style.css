@@ -1,11 +1,16 @@
 
-
-.container{
-	background-color: darksalmon;
+#pantallaDosA, #pantallaDosB{
+	display: none;
 }
+
 
 .botonUno{
 	border-radius: 10%;
+	background-color: darkviolet; 
+	border-color: darkviolet;
+}
+
+.botonDos{
 	background-color: darkviolet; 
 	border-color: darkviolet;
 }
