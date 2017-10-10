@@ -1,8 +1,33 @@
+body{
+	font-family: 'Swanky and Moo Moo', cursive;
+	font-size: 2em;
+}
 
-#pantallaDosA, #pantallaDosB{
+.container{
+	margin-top: 2em;
+}
+#pantallaDosA, #pantallaDosB, #pantallaTres, #pantallaCuatro{
 	display: none;
 }
 
+#fotoUno, #fotoDos, #fotoTres, #fotoCuatro, #fotoCinco, #fotoSeis, #fotoSiete, #fotoOcho, #fotoNueve, #fotoDiez,{
+	display: block;
+}
+
+#lanzarJugada{
+	display: none;
+}
+
+#engranajes{
+	display: none;
+
+}
+
+#total{
+	width: 50%;
+	height: 100px;
+	font-size: 2em;
+}
 
 .botonUno{
 	border-radius: 10%;
@@ -13,4 +38,12 @@
 .botonDos{
 	background-color: darkviolet; 
 	border-color: darkviolet;
+}
+
+.cuadroResultado{
+	width: 20%;
+	margin: 0 auto;
+	font-size: 5em;
+	text-align: center;
+	
 }

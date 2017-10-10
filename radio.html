@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Untitled Document</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+    input[type=radio]{
+    
+    }
+    </style>
+
+</head>
+
+<body>
+ <label for="jug1">1</label>
+<input id='jug1' type='radio' name="jugada" value='1'>
+ <label for="jug2">2</label>
+<input id='jug2' type='radio' name="jugada" value='2'>
+<label for="jug3">3</label>
+<input id='jug3' type='radio' name="jugada" value='3'>
+<label for="jug4">4</label>
+<input id='jug4' type='radio' name="jugada" value='4'>
+<label for="jug5">5</label>
+<input id='jug5' type='radio' name="jugada" value='5'>
+    <br>
+<button onclick='jugar()'> jugar</button>
+<div id='display'>
+</div>
+
+  
+  <script>
+      function jugar(){
+        var resultados =  document.querySelectorAll('input[type=radio]');
+          for(var i=0; i<resultados.length; i++){
+              if(resultados[i].checked){
+                  resultados[i].value;
+                  document.getElementById('display').innerHTML= resultados[i].value;
+             } 
+          }
+          
+      }
+   
+  </script>
+</body>
+</html>

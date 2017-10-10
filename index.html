@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		
+		<link href="https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo" rel="stylesheet">
 		<link type="text/css" href="style.css" rel="stylesheet">
 		
 	</head>
@@ -42,8 +42,7 @@
 				
 			
 			</div><!--pantallaUno-->
-			
-			
+						
 			<div id="pantallaDosA">
 			
 				
@@ -65,7 +64,6 @@
 			
 			<div id="pantallaDosB">
 			
-				
 				<div class="row">					
 					<div class="col-12">
 						<h2 class="text-center">¿Tú quieres ser ....</h2>
@@ -77,28 +75,166 @@
 					<div class="col-12">
 						<div class="form-check">
 						  <label class="form-check-label">
-							<input class="form-check-input" type="radio" name="elegir">
+							<input class="form-check-input" type="radio" name="elegir" id="pares" value="pares">
 							Pares
 						  </label>
 						  <label class="form-check-label">
-							<input class="form-check-input" type="radio" name="elegir">
+							<input class="form-check-input" type="radio" name="elegir" id="nones" value="nones">
 							o Nones?
 						  </label>
 						</div>
-						  <button type="submit" class="btn btn-primary btn-block botonDos">Empieza el juego!</button>
+						  <button type="submit" class="btn btn-primary btn-block botonDos" id="iniciaJugada">Empieza el juego!</button>
 					</div>
 				</div>
 				
 			
 			</div><!--pantallaDosB-->
+			
+			<div id="pantallaTres">
+			
+				<div class="row">					
+					<div class="col-12">
+						<h2 class="text-center">Escoge tu jugada</h2>
+						
+					</div>
+				</div>
+							
+				
+				<div class="row">
+					
+				
+						<div class="form-check col-6" id="fotoUno" >
+						  	<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="1">
+							<img src="imagenes/uno.jpg" alt="1" height="70">
+						  	</label>
+						</div>
+						<div class="form-check col-6" id="fotoDos" >
+						  	<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="2">
+							<img src="imagenes/dos.jpg" alt="2" height="70">
+						  	</label>
+						</div>
+				</div>			
+				<div class="row">
+							
+						<div class="form-check col-6" id="fotoTres">
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="3">
+							<img src="imagenes/tres.jpg" alt="3" height="70">
+						  	</label>
+						</div>
+						<div class="form-check col-6" id="fotoCuatro" >	
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="4">
+							<img src="imagenes/cuatro.jpg" alt="4" height="70">
+						  	</label>
+						</div>
+				</div>			
+				<div class="row">
+					
+						<div class="form-check col-6" id="fotoCinco" >
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="5">
+							<img src="imagenes/cinco.jpg" alt="5" height="70">
+						  	</label>
+						</div>
+						<div class="form-check col-6" id="fotoSeis" >
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="6">
+							<img src="imagenes/seis.jpg" alt="6" height="70">
+						  	</label>
+						</div>
+				</div>			
+				<div class="row">
+						<div class="form-check col-6" id="fotoSiete" >
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="7">
+							<img src="imagenes/siete.jpg" alt="7" height="70">
+						  	</label>
+						</div>
+						<div class="form-check col-6" id="fotoOcho">						
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="8">
+							<img src="imagenes/ocho.jpg" alt="8" height="70">
+						  	</label>
+						</div>
+				</div>			
+				<div class="row">
+						<div class="form-check col-6" id="fotoNueve" >
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="9">
+							<img src="imagenes/nueve.jpg" alt="9" height="70">
+							</label>
+						</div>
+						<div class="form-check col-6" id="fotoDiez" >
+							<label class="form-check-label">
+							<input class="mano form-check-input" type="radio" name="jugada" value="10">
+							<img src="imagenes/diez.jpg" alt="10" height="70">
+							</label>
+						</div>
+				</div>
+				
+				<div class="row" id="engranajes">
+						  <h2>Espera mientras la máquina se decide ... </h2>
+						  <img src="imagenes/gears2.gif" alt="engranajes" width="100">
+				</div>
+				
+							
+				<div class="row">		
+						  <button type="submit" class="btn btn-primary btn-block botonDos" id="lanzarJugada">UNO, DOS Y TRES!!</button>
+				</div>	
+				
+				
+				
+				
+			
+			</div><!--pantallaTres-->
 		
-		
+			<div id="pantallaCuatro">
+			
+				
+				<div class="row">
+					<div class="col-12">
+						  <h2>La maquina ha elegido el número <span id="numeroMaquina"></span> </h2>
+						 
+					</div>
+					
+					<div class="col-12">
+						<h2 class="text-center">En total son .... </h2>
+						
+					</div>
+					
+					<div class="col-12" id="total">
+						
+						
+					</div>
+					
+					<div class="col-12">
+						
+						<h2 class="text-center"><span id="resultado"></span></h2>
+						
+						
+						
+					</div>
+					
+					
+					
+				</div>
+							
+				
+				
+				
+			
+			</div><!--pantallaCuatro-->
 		
 		
 		
 		
 		
 		</div><!--container-->
-	<script type="text/javascript" src="script.js"></script>
+
+		<script type="text/javascript" src="script.js"></script>
+
 	</body>
 </html>
